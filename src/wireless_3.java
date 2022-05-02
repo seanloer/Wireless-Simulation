@@ -38,9 +38,7 @@ public class wireless_3 {
 		}
 		System.out.println("Possible corrupted channel: \n" + list + "\n");
 
-		for (int i = 0, j = 40; i < 40 - poisson; i++, j--) { // corrupted
-																// channel based
-																// on poisson
+		for (int i = 0, j = 40; i < 40 - poisson; i++, j--) { // corrupted channel based on Poisson
 			list.remove(random.nextInt(j));
 		}
 		System.out.println("Actual corrupted channel: \n" + list + "\n");
