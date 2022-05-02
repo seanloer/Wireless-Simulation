@@ -32,8 +32,7 @@ public class wireless_3 {
 			list.add(i + 1);
 		}
 
-		for (int i = 0, j = 79; i < 39; i++, j--) { // possible corrupted
-													// channel: 79 - 39 = 40
+		for (int i = 0, j = 79; i < 39; i++, j--) { // possible corrupted channel: 79 - 39 = 40													 
 			list.remove(random.nextInt(j));
 		}
 		System.out.println("Possible corrupted channel: \n" + list + "\n");
@@ -46,8 +45,7 @@ public class wireless_3 {
 		return list;
 	}
 
-	public static ArrayList sequence(int id) { // generating hopping sequence by
-												// device id
+	public static ArrayList sequence(int id) { // generating hopping sequence by device id												
 		ArrayList<Integer> list = new ArrayList();
 
 		Random random = new Random();
