@@ -28,15 +28,12 @@ public class wireless_2 {
 			list.add(i + 1);
 		}
 
-		for (int i = 0, j = 79; i < 39; i++, j--) { // possible corrupted
-													// channel: 79 - 39 = 40
+		for (int i = 0, j = 79; i < 39; i++, j--) { // possible corrupted channel: 79 - 39 = 40
 			list.remove(random.nextInt(j));
 		}
 		System.out.println("Possible corrupted channel: \n" + list + "\n");
 
-		for (int i = 0, j = 40; i < 40 - poisson; i++, j--) { // corrupted
-																// channel based
-																// on poisson
+		for (int i = 0, j = 40; i < 40 - poisson; i++, j--) { // corrupted channel based on Poisson distribution
 			list.remove(random.nextInt(j));
 		}
 		System.out.println("Actual corrupted channel: \n" + list + "\n");
